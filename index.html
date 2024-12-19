@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>
+            JADS.stream: Joe related sites maintained by the community
+        </title>
+        <meta
+            name="description"
+            content="Joe related sites maintained by the community."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <meta name="theme-color" content="#d41904" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Joseph Anderson Stream Bets" />
+        <meta
+            property="og:description"
+            content="Joe related sites maintained by the community."
+        />
+        <meta property="og:site_name" content="JADS.stream" />
+        <meta property="og:locale" content="en" />
+        <meta property="og:url" content="https://jads.stream/" />
+        <meta
+            property="og:image"
+            content="https://jads.stream/assets/icon.png"
+        />
+        <meta property="og:image:alt" content="Joms" />
+
+        <base href="https://jads.stream/" />
+
+        <link rel="icon" type="image/png" href="/assets/icon.png" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Numans&display=swap"
+            rel="stylesheet"
+        />
+
+        <style>
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.5em;
+                gap: 1.5em;
+                padding: 1em;
+                font-family: "Numans", serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            a {
+                color: #d41904;
+            }
+
+            .sites {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                flex-flow: column;
+                gap: 1em;
+
+                li {
+                    display: grid;
+                    grid-template:
+                        "title creator" auto
+                        "description description" auto /
+                        auto 1fr;
+                    align-items: baseline;
+                    gap: 0.5em;
+
+                    h2 {
+                        grid-area: title;
+                        font-size: 1.5em;
+                        margin: 0;
+                    }
+
+                    .creator {
+                        grid-area: creator;
+                        font-size: 0.75em;
+                    }
+
+                    .description {
+                        grid-area: description;
+                    }
+                }
+            }
+
+            footer {
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                margin: 0.5em;
+
+                img {
+                    width: 1em;
+                    height: 1em;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>JADS.stream</h1>
+            <span class="about">
+                Joe related sites maintained by the community.
+            </span>
+        </header>
+        <ul class="sites">
+            <li>
+                <h2>
+                    <a href="http://joepedia.wikidot.com/"> Joepedia </a>
+                </h2>
+                <span class="creator">by Retinas</span>
+                <span class="description">
+                    A wiki for all things Joe, chans, memes, etc.
+                </span>
+            </li>
+            <li>
+                <h2>
+                    <a
+                        href="https://peertube.nodja.com/c/joestreams/video-playlists"
+                    >
+                        Unofficial VOD Backup
+                    </a>
+                </h2>
+                <span class="creator">by Nodja</span>
+                <span class="description">
+                    Should contains all VODs not uploaded to Joe's second
+                    channel.
+                </span>
+            </li>
+            <li>
+                <h2>
+                    <a href="https://schedujoe.bulder.fi/">Schedujoe</a>
+                </h2>
+                <span class="creator">by Bulder</span>
+                <span class="description">
+                    List of games Joe promised he would play, not a strict
+                    list/order.
+                </span>
+            </li>
+            <li>
+                <h2>
+                    <a href="https://www.backloggd.com/u/jph_streams/">
+                        Joe streams backloggd
+                    </a>
+                </h2>
+                <span class="creator">by Falzar</span>
+                <span class="description">
+                    List of games Joe promised he would play, not a strict
+                    list/order.
+                </span>
+            </li>
+            <li>
+                <h2>
+                    <a href="https://bets.jads.stream/games">JASB</a>
+                </h2>
+                <span class="creator">by Latty</span>
+                <span class="description">
+                    Place bets on things that might happen on stream, for fake
+                    points not real money :)
+                </span>
+            </li>
+            <li>
+                <h2>
+                    <a href="https://jads-dev.github.io/jads-stats/">
+                        JADS Stats
+                    </a>
+                </h2>
+                <span class="creator">by Nodja</span>
+                <span class="description">
+                    Contains misc stats from the discord, updated daily.
+                </span>
+            </li>
+        </ul>
+        <footer>
+            <img src="/assets/icon.png" alt="Joms" />
+        </footer>
+    </body>
+</html>
