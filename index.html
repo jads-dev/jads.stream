@@ -27,8 +27,6 @@
         />
         <meta property="og:image:alt" content="Joms" />
 
-        <base href="https://jads.stream/" />
-
         <link rel="icon" type="image/png" href="/assets/icon.png" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -44,7 +42,7 @@
                 flex-flow: row wrap;
                 align-items: center;
                 justify-content: center;
-                font-size: 1.5em;
+                font-size: clamp(0.75em, 2.5vmin, 1.5em);
                 gap: 1.5em;
                 padding: 1em;
                 font-family: "Numans", serif;
@@ -61,7 +59,7 @@
                 padding: 0;
                 display: flex;
                 flex-flow: column;
-                gap: 1em;
+                gap: 1.2em;
 
                 li {
                     display: grid;
@@ -69,8 +67,8 @@
                         "title creator" auto
                         "description description" auto /
                         auto 1fr;
-                    align-items: baseline;
-                    gap: 0.5em;
+                    align-items: flex-end;
+                    gap: 0.4em;
 
                     h2 {
                         grid-area: title;
@@ -87,6 +85,12 @@
                         grid-area: description;
                     }
                 }
+            }
+
+            .whatisjads {
+                display: block;
+                font-size: 0.75em;
+                margin: auto;
             }
 
             footer {
@@ -112,7 +116,43 @@
         <ul class="sites">
             <li>
                 <h2>
-                    <a href="http://joepedia.wikidot.com/"> Joepedia </a>
+                    <a href="https://discordapp.com/invite/8gSBsYC">
+                        <abbr title="Joseph Anderson Discord Server">JADS</abbr>
+                    </a>
+                </h2>
+                <span class="description">
+                    The Joseph Anderson Discord Server, the main community hub
+                    for Joe stuff.
+                    <audio
+                        controls
+                        controlslist="play volume"
+                        preload
+                        class="whatisjads"
+                    >
+                        <source src="assets/WhatIsJADS.opus" type="audio/ogg" />
+                        <source src="assets/WhatIsJADS.mp3" type="audio/mpeg" />
+                        <span>
+                            Joseph Anderson saying:
+                            <blockquote>
+                                “What the fuck is JA—? Wha—How the, how are you
+                                here and you don't know what <em>JADS</em> is?
+                                Like, you—you've listened to this whole thing,
+                                and your question is ‘What is JADS?’?!
+                                <strong>
+                                    What do you mean ‘What is JADS?’?! That's
+                                    your question?!
+                                </strong>
+                                After everything, your question is ‘What is
+                                JA—’?.. JADS is the discord server. Joseph
+                                Anderson Discord Server. This—It's JADS!”
+                            </blockquote>
+                        </span>
+                    </audio>
+                </span>
+            </li>
+            <li>
+                <h2>
+                    <a href="http://joepedia.wikidot.com/">Joepedia</a>
                 </h2>
                 <span class="creator">by Retinas</span>
                 <span class="description">
@@ -157,7 +197,9 @@
             </li>
             <li>
                 <h2>
-                    <a href="https://bets.jads.stream/games">JASB</a>
+                    <a href="https://bets.jads.stream/games">
+                        <abbr title="Joseph Anderson Stream Bets">JASB</abbr>
+                    </a>
                 </h2>
                 <span class="creator">by Latty</span>
                 <span class="description">
@@ -188,7 +230,9 @@
             </li>
         </ul>
         <footer>
-            <img src="/assets/icon.png" alt="Joms" />
+            <a href="https://github.com/jads-dev/jads.stream" target="_blank">
+                <img src="/assets/icon.png" alt="Joms" />
+            </a>
         </footer>
     </body>
 </html>
