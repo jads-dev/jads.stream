@@ -61,7 +61,7 @@
                 flex-flow: column;
                 gap: 1.2em;
 
-                li {
+                > li {
                     display: grid;
                     grid-template:
                         "title creator" auto
@@ -70,18 +70,18 @@
                     align-items: flex-end;
                     gap: 0.4em;
 
-                    h2 {
+                    > h2 {
                         grid-area: title;
                         font-size: 1.5em;
                         margin: 0;
                     }
 
-                    .creator {
+                    > .creator {
                         grid-area: creator;
                         font-size: 0.75em;
                     }
 
-                    .description {
+                    > .description {
                         grid-area: description;
                     }
                 }
@@ -99,7 +99,7 @@
                 right: 0;
                 margin: 0.5em;
 
-                img {
+                > img {
                     width: 1em;
                     height: 1em;
                 }
